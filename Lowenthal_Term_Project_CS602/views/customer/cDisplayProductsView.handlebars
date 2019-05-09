@@ -1,0 +1,37 @@
+<nav>
+	<a href="/index">Back to Home</a>
+	<a href="/customer/products">See All Products</a>
+	<a href="/customer/search">Find an Instrument</a>
+	<a href="/customer/view_cart">View Cart</a>
+</nav>
+<table>
+	<p id="in_stock">{{message}}</p>
+	<thead>
+		<tr>
+			<th>Product ID</th>
+			<th>Product Name</th>
+			<th>Description</th>
+            <th>Price</th>
+            <th>Quantity in Stock</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each data}}
+			<tr>
+				<td>{{this.productId}}</td>
+				<td>{{this.productName}}</td>
+				<td>{{this.productDescription}}</td>
+                <td>{{this.productPrice}}</td>
+                <td>{{this.productQuantity}}</td>
+				<td>
+					<form method="post" action="/customer/add_cart/{{this.id}}">
+						{{!-- <input type="hidden" name="{{this.id}}" value="Add to Cart"> --}}
+						<label for="quantity_added">How many do you want?</label><br>
+						<input type="text" name="quantity_added" id="quantity_added">
+						<input type="submit" name="submit" value="Add to cart">
+					</form>
+				</td>
+			</tr>
+		{{/each}}
+	</tbody>
+</table>

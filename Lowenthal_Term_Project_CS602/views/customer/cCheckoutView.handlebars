@@ -1,0 +1,78 @@
+
+<nav>
+	<a href="/index">Back to Home</a>
+    <a href="/customer/products">See Our Products</a>
+	<a href="/customer/search">Find an Instrument</a>
+	<a href="/customer/view_cart">View Cart</a>
+</nav>
+<section>
+    <h3>Your Items</h3>
+    <p>To edit items, <a href="/customer/view_cart">view cart</a></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity Added</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each data.shoppingCart.addedProducts}}
+                <tr>
+                    <td>{{this.productId}}</td>
+                    <td>{{this.productName}}</td>
+                    <td>{{this.productDescription}}</td>
+                    <td>{{this.productPrice}}</td>
+                    <td>{{this.quantityAdded}}</td>
+                </tr>
+            {{/each}}
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Total: </td>
+                    <td>{{data.total}}</td>
+                </tr>
+        </tbody>
+    </table>
+</section>
+<section>
+    <form name="address_payment" action="/customer/confirm_checkout" method="POST">
+        <!--HTML5 validation is included in case JavaScript is not enabled in browser-->
+        <fieldset id="mailing_address">
+                <label for="street_address">Street Address</label><br>
+                <input type="text" name="street_address" id="street_address" required>
+            <br>
+                <label for="country">Country</label><br>
+                <input type="text" name="country" id="country" required>
+            <br>
+                <label for="city">City</label><br>
+                <input type="text" name="email" id="email" required>
+            <br>
+                <label for="state">State</label><br>
+                <input type="text" name="state" id="state">
+            <br>
+                <label for="zipcode">Zipcode</label><br>
+                <input type="text" name="zipcode" id="zipcode">
+        </fieldset>
+        <fieldset id="payment_information">
+                <label for="name_on_card">Name on Card</label><br>
+                <input type="text" name="name_on_card" id="name_on_card">
+            <br>
+                <label for="card_number">Card Number</label><br>
+                <input type="text" name="card_number" id="card_number">
+            <br>
+                <label for="exp_month">Expiration Month</label><br>
+                <input type="text" name="exp_month" id="exp_month">
+            <br>
+                <label for="exp_year">Expiration Year</label><br>
+                <input type="text" name="exp_year" id="exp_year">
+            <br>
+                <label for="cvv">CVV</label><br>
+                <input type="text" name="cvv" id="cvv">
+        </fieldset>
+        <input type="hidden" name="order_total" value="{{data.total}}">
+        <input type="submit" name="submit" value="Place Order">
+    </form>
+</section>

@@ -1,0 +1,34 @@
+{
+  "name": "cs602_term_project_lowenthal",
+  "version": "1.0.0",
+  "description": "Jake Lowenthal's final project for CS602",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ".gitignore"
+  },
+  "keywords": [
+    "Node.JS",
+    "MongoDB",
+    "Express.JS",
+    "Handlebars",
+    "template",
+    "engines",
+    "HTTP",
+    "requests",
+    "GET",
+    "POST",
+    "XML",
+    "JSON"
+  ],
+  "author": "Jacob Lowenthal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.4.16"
+  }
+}
