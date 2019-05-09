@@ -1,0 +1,98 @@
+h1 {
+    font-size: 48px;
+}
+h1, h2 {
+    text-align: center;
+}
+h2 {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #191919;
+}
+h1, button, input, h2, p {
+    color: #191919;
+}
+section {
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 5px;
+}
+section#job_search_section {
+    /*location of search input*/
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    background-color: rgb(177, 255, 203);
+    color: #191919;
+}
+section#bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#search_results, section#loaded_jobs_container {
+    display: inline-block;
+    margin: auto;
+    width: 40%;
+    height: 500px;
+    overflow: scroll;
+    padding: 10px;
+    background-color: rgb(177, 255, 203);
+}
+#input_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section p {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    font-size: 18px;
+}
+button, input {
+    margin: 10px 20px;
+}
+button {
+    display: inline-block;
+}
+#map_aside_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 95%;
+}
+agm-map {
+    height: 396px;/*needed for AGM*/
+    margin: 40px 10px;
+    width: 100%;
+    min-width:400px;
+    max-width: 2000px;
+    min-height: 396px;
+    max-height: 2000px;
+}
+aside#to_save_container {
+    width: 40%;
+    min-width: 133px;
+    max-width: 667px;
+    height: 396px;
+    min-height: 396px;
+    max-height: 2000px;
+    margin: 40px 10px 40px 20px;
+    background-color:rgb(177, 255, 203);
+}
+table {
+    border-collapse: separate;
+    border-spacing: 10px 5px;
+}
+td {
+    background-color: #f5f5f5;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 3px;
+    font-size: 14px;
+}
+

@@ -1,0 +1,60 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<header>
+  <h1>Mapped Job Search Results</h1>
+</header>
+<section id="job_search_section">
+  <p>Enter your desired job location.
+  </p>
+  <section id="input_container">
+    <label for="location">Location </label>
+    <input type="text" id="location" name="location" #locationField>
+  </section><br>
+  <button type="button" (click)="getJobs(locationField.value)">Search</button>
+</section>
+<section id="map_aside_container">
+  <!-- this creates a google map on the page with the given lat/lng from -->
+  <!-- the component as the initial center of the map: -->
+  <agm-map [latitude]="lat" [longitude]="lng" [fitBounds]="true"><!--AGM component-->
+    <agm-marker *ngFor="let job of jobs"
+      [latitude]="job.lat" [longitude]="job.lng"
+      [agmFitBounds]="true">
+      <agm-info-window [disableAutoPan]="true">
+        {{job.title}}<br>
+        {{job.company}}
+      </agm-info-window>
+    </agm-marker><!--AGM component-->
+  </agm-map>
+  <aside id="to_save_container" (dragover)="allowDrop($event)" (drop)="drop($event)">
+    <h2>Interesting Jobs</h2>
+      <table id="to_save">
+        <!--jobs dropped here-->  
+      </table>
+  </aside>
+</section>
+<section id="bottom">
+  <section id="loaded_jobs_container">
+    <h2>Saved Jobs</h2>
+    <table id="loaded_jobs">
+      <tr *ngFor="let job of jobsFromStorage" id="{{job.id}}">
+        <td>{{job.title}}</td>
+        <td>{{job.company}}</td>
+        <td><a href="{{job.url}}" target="_blank">Go to Posting</a></td>
+        <td><button type="button" (click)="deleteJob(job.id)">Delete</button></td>
+      </tr>
+    </table>
+  </section>
+  <section id="search_results">
+    <!-- list of jobs in search -->
+    <h2>Search Results</h2>
+    <p>Interested in a job? Drag it to the "Interesting Jobs" field to save it!</p>
+    <table>
+      <tr *ngFor="let job of jobs" draggable="true" (dragstart)="drag($event)" id="{{job.id}}">
+        <td>{{job.title}}</td>
+        <td>{{job.company}}</td>
+        <td><a href="{{job.url}}" target="_blank">Go to Posting</a></td>
+      </tr>
+    </table>   
+  </section>
+</section>
+
+<router-outlet></router-outlet>

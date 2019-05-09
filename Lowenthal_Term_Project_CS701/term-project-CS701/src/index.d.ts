@@ -1,0 +1,1 @@
+declare module 'googlemaps';//necessary for Google Maps API
