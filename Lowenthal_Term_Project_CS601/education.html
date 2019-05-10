@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Education</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/images_jquery.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Education</h1>
+            <nav><!--Site navigation within header so users can locate pages faster-->
+                <ul>
+                    <li class="nav_list"><a href="index.html">Home</a></li>
+                    <li class="nav_list"><a href="work_samples.html">Work Samples</a></li>
+                    <li class="nav_list"><a href="professional.html">Professional</a></li>
+                    <li class="nav_list"><a href="education.html">Education</a></li>
+                    <li class="nav_list"><a href="about.html">About Me</a></li>
+                    <li class="nav_list"><a href="contact.html">Contact</a></li>
+                </ul> 
+            </nav>
+        </header>
+        <main>
+            <section class="small_content_container" id="education_container"><!--Small_content for styling/layout-->
+                <h2>Education</h2>
+                <h3 class="read_more">Graduate</h3>
+                <button class="read_more">Read More...</button>
+                <p class="read_more">I am currently pursuing a graduate certificate in web development at 
+                    <a href="https://www.bu.edu/">Boston University</a>. I have learned about topics such 
+                    as software comfiguration management, object-oriented programming with Java, the software 
+                    development life cycle, project management, HTML, CSS, JavaScript, AJAX, JSON, jQuery, and XML</p>
+                <h3 class="read_more">Undergraduate</h3>
+                <button class="read_more">Read More...</button>
+                <p class="read_more">I earned my B.A. in Psychology and a minor in music from St. Mary's College 
+                    of Maryland.  I graduated cum laude and was nominated for an award for my 
+                    senior research thesis. The college is nicknamed, "The Hidden Gem."  Hopefully I can help increase 
+                    its visibility.  <a href="http://smcm.edu/" class="link_in_text">Visit the college website!</a>
+                </p>
+            </section>
+            <section class="carousel" id="further_education"> <!--carousel for styling/css-->
+                <h2>Coursera Certificates</h2>
+                <p>Below are pictures of certificates I have earned through Coursera.  This website really helped me build 
+                    some foundational skills within a variety of different topics.</p>
+                <!--alt text and titles are very similar, but not equivalent due to screenreader bug-->
+                <ul class="carousel">
+                    <li class="carousel">
+                        <button id="expand1">Expand Image</button>
+                        <button id="collapse1">Collapse Image</button>
+                        <figure>
+                            <img id="python_cert_1" src="images/Python_Specialization_Certificate.png" alt="Screenshot of Python Specialization Certificate" title="Photo of Python Specialization Certificate" width="377" height="287">
+                            <figcaption>Python 5-Course Specialization Certificate</figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel">
+                        <button id="expand2">Expand Image</button>
+                        <button id="collapse2">Collapse Image</button>
+                        <figure>
+                            <img id="html5_cert" src="images/Intro_to_HTML5_Certificate.png" alt="Screenshot of Introduction to HTML5 Certificate" title="Photo of Introduction to HTML5 Certificate" width="377" height="287">
+                            <figcaption>Introduction to HTML5 Certificate</figcaption>
+                        </figure>
+                    </li>
+                        <li class="carousel">
+                        <button id="expand3">Expand Image</button>
+                        <button id="collapse3">Collapse Image</button>
+                        <figure>
+                            <img id="css3_cert" src="images/Intro_to_CSS3_Certificate.png" alt="Screenshot of Introduction to CSS3 Certificate" title="Photo of Introduction to CSS3 Certificate" width="377" height="287">
+                            <figcaption>Introduction to CSS3 Certificate</figcaption>
+                        </figure> 
+                        </li>
+                    <li class="carousel">
+                        <button id="expand4">Expand Image</button>
+                        <button id="collapse4">Collapse Image</button>
+                        <figure>
+                            <img id="javascript_cert" src="images/Interactivity_with_JavaScript_Certificate.png" alt="Screenshot of Interactivity with JavaScript Certificate" title="Photo of Interactivity with JavaScript Certificate" width="377" height="287">
+                            <figcaption>Interactivity with JavaScript Certificate</figcaption>
+                        </figure> 
+                    </li>
+                    <li class="carousel">
+                        <button id="expand5">Expand Image</button>
+                        <button id="collapse5">Collapse Image</button>
+                        <figure>
+                            <img id="web_dev_cert" src="images/Web_Development_UCD_Certificate.png" alt="Screenshot of Introduction to Web Development Certificate" title="Photo of Introduction to Web Development Certificate" width="377" height="287">
+                            <figcaption>Introduction to Web Development Certificate</figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel">
+                        <button id="expand6">Expand Image</button>
+                        <button id="collapse6">Collapse Image</button>
+                        <figure>
+                            <img id="python_cert_2" src="images/Interactive_Programming_Python_Certificate.png" alt="Screenshot of Interactive Programming in Python Certificate" title="Photo of Interactive Programming in Python Certificate" width="377" height="287">
+                            <figcaption>Interactive Programming with Python Certificate</figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel">
+                        <button id="expand7">Expand Image</button>
+                        <button id="collapse7">Collapse Image</button>
+                        <figure>
+                            <img id="design_cert" src="images/Human_Centered_Design_Intro_Certificate.png" alt="Screenshot of Human-Centered Design Certificate" title="Photo of Human-Centered Design Certificate" width="377" height="287">
+                            <figcaption>Human-Centered Design Certificate</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            <section id="large_image_1"></section><!--for jQuery-->
+        </main>
+    </body>
+</html>

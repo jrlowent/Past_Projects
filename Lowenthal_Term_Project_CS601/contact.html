@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="css/form.css" type="text/css">
+        <script src="js/form.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Contact</h1>
+            <nav><!--Site navigation within header so users can locate pages faster-->
+                <ul>
+                    <li class="nav_list"><a href="index.html">Home</a></li>
+                    <li class="nav_list"><a href="work_samples.html">Work Samples</a></li>
+                    <li class="nav_list"><a href="professional.html">Professional</a></li>
+                    <li class="nav_list"><a href="education.html">Education</a></li>
+                    <li class="nav_list"><a href="about.html">About Me</a></li>
+                    <li class="nav_list"><a href="contact.html">Contact</a></li>
+                </ul> 
+            </nav>
+        </header>
+        <main>
+            <section class="large_content_container centered_container"><!--For layout/styling-->
+                <p id="form_note">
+                    Note: This form does not actually "submit" your answers to me.  It simply illustrates my uderstanding of HTML, and 
+                    front-end validation using HTML5 and JavaScript.  I will be learning server-side programming in my next class!
+                </p>
+                <form name="lowenthalForm">
+                    <!--HTML5 validation is included in case JavaScript is not enabled in browser-->
+                    <fieldset id="name__and_contact">
+                            <label for="firstName">First Name</label><br>
+                            <input type="text" name="firstName" id="firstName" required>
+                            <p class="feedback" id="badFirstName"></p>
+                        <br>
+                            <label for="lastName">Last Name</label><br>
+                            <input type="text" name="lastName" id="lastName" required>
+                            <p class="feedback" id="badLastName"></p>
+                        <br>
+                            <label for="email">Email Address</label><br>
+                            <input type="email" name="email" id="email" placeholder="example@example.com" required>
+                            <p class="feedback" id="badEmail"></p>
+                        <br>
+                            <label for="phoneNumber">Phone Number</label><br>
+                            <input type="text" name="phoneNumber" id="phoneNumber" placeholder="000-000-0000">
+                            <p class="feedback" id="badPhone"></p><br>
+                            <label for="phoneType">Type of Phone</label><br>
+                            <select name="phoneType" id="phoneType" required>
+                                <option value="" label="placeholder">Please Select</option><!--Making select "required" needs empty value and label to validate-->
+                                <option value="mobile">Mobile</option>
+                                <option value="work">Work</option>
+                                <option value="home">Home</option>
+                            </select>
+                        <br>
+                            <label for="userInquiry">Enter your message below:</label><br>
+                            <textarea name="userInquiry" id="userInquiry" required></textarea>
+                            <p id="badInquiry" class="feedback"></p>
+                    </fieldset>
+                    <fieldset id="radioField">
+                        <p id="question">How did you find my website?</p>
+                        <p id="badRadio" class="feedback"></p><br> 
+                        <input type="radio" name="radioFoundSite" value="searchEngine" required>Search Engine<br> 
+                        <input type="radio" name="radioFoundSite" value="linkedIn" required>LinkedIn<br>
+                        <input type="radio" name="radioFoundSite" value="network" required>Professional Network<br>
+                        <input type="radio" name="radioFoundSite" value="jobWebsite" required>Job Website<br>
+                        <input type="radio" name="radioFoundSite" value="word_of_mouth" required>Word of Mouth<br>
+                        <input type="radio" name="radioFoundSite" value="foundOther" required>Other
+                        <input type="text" name="radioFoundSite">
+                    </fieldset>
+                    <input type="submit" name="submitButton" value="Submit">
+                </form>
+            </section>    
+        </main>
+    </body>
+</html>

@@ -1,0 +1,356 @@
+/*Container selectors first, working inwards to child selectors, increasing in specificity*/
+/*========================================================================================*/
+body {
+    background: url("../images/brushed_alum_dark.png");
+    /*Source: https://www.toptal.com/designers/subtlepatterns/brushed-alum-dark*/
+    margin: 0px;
+    min-width: 800px;
+}
+header {
+    border-style: solid;
+    border-width: 0px 0px 10px 0px;
+    border-color: #9b111e;
+}
+nav {
+    background-color: #2a0d45;
+    margin: 0px;
+    padding: 2px;
+}
+nav ul {
+    text-align: center; 
+}
+nav ul li {
+    display: inline;
+    margin: 8px 15px 5px 10px; 
+}
+nav a:link {
+    vertical-align: top;
+    display: inline-block;
+    background-color: #fff;
+    opacity: 0.8;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #1c1c1c;
+    text-decoration: none;
+}
+nav a:visited {
+    opacity: 0.8;
+}
+nav a:hover {
+    opacity: 1.0;
+}
+nav a:active {
+    border-style: solid;
+    border-width: 0px 0px 5px 0px;
+    border-color: #0f52ba;
+}
+a.link_in_text {
+    color: #2a0d45;
+}
+a#resume_download {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: #fefefe;
+    background-color: #9b111e;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 315px;
+    border-radius: 5px;
+}
+main {
+    width: 90%;
+}
+main#work_samples {
+    margin-left: auto;
+    margin-right: auto;
+}
+.large_content_container {
+    width: 60%;
+    padding: 10px;
+    margin: 0px 20px;
+    float: left;
+    overflow: auto; /*handles bug with collapsing container element*/
+}
+.small_content_container {
+    width: 33%;
+    float: left;
+}
+#education_container {
+    margin: 10px 20px;
+}
+#table_aside {
+    float: left;
+    margin: 0px 20px;
+    padding: 10px;
+    width: 28%;
+    min-width: 260px;
+    min-height: 651px;
+}
+#table_container, #list_container {
+    overflow: auto; /*handles bug with collapsing container element*/
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 250px;
+}
+#list_container {
+    margin-left: 20px;
+    margin-right: 0px;
+}
+section#biography_container {
+    background-color: #2a0d45;
+    height: 644px;
+    margin: 30px 20px 20px 20px;
+    overflow-y: auto;
+    border-style: solid;
+    border-color: #000;
+    border-width: 6px;
+}
+section#resume_container {
+    background-color: #2a0d45;
+    margin: 40px 20px 20px 20px;
+    max-height: 541px;
+    overflow-y: auto;
+    border-style: solid;
+    border-color: #000;
+    border-width: 6px;
+    float: left;
+}
+section.large_content_container ul, section#list_container ul {
+    background-color:  #9b111e;
+    border-radius: 5px;
+}
+section ul li, #outer_list, #inner_list {
+    /* width: 149px; */
+    color: #fefefe;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 20px;
+}
+section#table_container table {
+    overflow: auto; /*handles bug with collapsing container element*/
+    background-color: #fefefe;
+    opacity: 0.8;
+    border-radius: 5px;
+    padding: 8px;
+    border-style: solid;
+}
+table thead {
+    border-style: solid;
+    border-bottom: 6px;
+    border-color: #9b111e;
+}
+table tr {
+    border-style: solid;
+    border-width: 0px 0px 4px 0px;
+    border-color: #fefefe;
+}
+table tr th {
+    background-color: #9b111e;
+    padding: 5px;
+    color: #fefefe;
+    border-style: solid;
+    border-width: 0px 0px 4px 0px;
+    border-color: #2a0d45;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table tr td {
+    background-color: #9b111e;
+    padding: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-style: solid;
+    border-color: #2a0d45;
+    border-radius: 3px;
+    color: #fefefe;
+}
+table tfoot td {
+    border-radius: 3px 3px 6px 6px;
+}
+section.media_container {
+    width: 692px;
+    float: left;
+    margin: 10px 10px 10px 20px;
+}
+section.media_container > figure > img {
+    width: 304px;
+    height: 302px;
+}
+aside {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+aside.media_container {
+    width: 25%;
+    max-width: 500px;
+    min-width: 200px;
+    margin: 10px;
+    float: left;
+    clear: right;
+}
+aside#me_and_melody {
+    margin: 23px 10px 10px 10px;
+}
+aside.code_samples {
+    max-width: 500px;
+}
+aside > img {
+    width: 445px;
+    height: 561px;
+    margin: 35px 5px;
+}
+aside#linkedIn {
+    clear: both;
+    width: 60%;
+    min-width: 554.7px;
+    max-width: 757px;
+    float: left;
+    clear: right;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+caption, figcaption {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-style: solid;
+    border-color: #9b111e;
+    border-width: 0px 0px 5px 0px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #fff;
+    opacity: 0.8;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1c1c1c;
+}
+section.media_container > figure > figcaption {
+    width: 295px;
+}
+#index_photo_caption {
+    width: 210px;
+}
+section.carousel {
+    min-width: 547.55px;
+    margin: 0px;
+    padding: 2px;
+    background-color: #2a0d45;
+    text-align: center;
+    font-size: 14px;
+}
+section.carousel#further_education {
+    width: 60%;
+    float: left;
+    margin: 0px 10px 10px 10px;
+}
+section.carousel ul {
+    overflow-x: scroll;
+    height: 400px;
+}
+section.carousel ul li {
+    color: #fefefe;
+    float: left;
+    width: 420px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 15px 5px 10px;
+    padding: 0px 40px;
+    list-style: none;
+}
+section.carousel figure {
+    width: 400px;
+    height: 400px;
+}
+section.carousel img {
+    display: inline;
+}
+section#large_image_1, section#large_image_2, section#large_image_3, section#large_image_4 {
+    width: 765px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#large_image_1 > img, #large_image_2 > img, #large_image_3 > img, #large_image_4 > img {
+    margin: 5px 2px;
+}
+.download_item a:link {
+    text-align: center;
+    padding: 15px;
+    margin-left: -5px;
+    font-size: 14px;
+    color: #1c1c1c;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    border-color: #2a0d45;
+}
+h1, h2, h3, p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-style: solid;
+    border-color: #9b111e;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    opacity: 0.8;
+    font-weight: bold;
+}
+p {
+    font-size: 18px;
+}
+p.code_samples {
+    margin-top: 2px;
+}
+section.media_container > p {
+    width: 667px;
+}
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 0px;
+    border-width: 0px 0px 10px 0px;
+}
+h2 {
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    border-width: 0px 0px 6px 0px;
+}
+section.media_container h2 {
+    margin: 0px 20px 0px 20px;
+}
+h2.code_samples {
+    margin-bottom: 2px;
+}
+h3 {
+    font-weight: bold;
+    font-size: 24px;
+    border-width: 0px 0px 6px 0px; 
+}
+h3.read_more {
+    margin-bottom: 0px;
+}
+button[class="read_more"] { /*just another way to select the class attribute*/
+    background-color: #9b111e;
+    border-color: #9b111e;
+    border-top-color: #fefefe;
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #fefefe;
+}
+
+
+
+
+
+
+
+

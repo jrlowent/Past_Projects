@@ -1,0 +1,112 @@
+body {
+    background: url("../images/brushed_alum_dark.png");
+    /*Source: https://www.toptal.com/designers/subtlepatterns/brushed-alum-dark*/
+    margin: 0px;
+}
+header {
+    border-style: solid;
+    border-width: 0px 0px 10px 0px;
+    border-color: #9b111e;
+}
+nav {
+    background-color: #2a0d45;
+    margin: 0px;
+    padding: 2px;
+}
+nav ul {
+    text-align: center; 
+}
+nav ul li {
+    display: inline;
+    margin: 8px 15px 5px 10px; 
+}
+nav a:link {
+    vertical-align: top;
+    display: inline-block;
+    background-color: #fff;
+    opacity: 0.8;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #1c1c1c;
+    text-decoration: none;
+}
+nav a:visited {
+    opacity: 0.8;
+}
+nav a:hover {
+    opacity: 1.0;
+}
+nav a:active {
+    border-style: solid;
+    border-width: 0px 0px 5px 0px;
+    border-color: #0f52ba;
+}
+main {
+    width: 60%;
+    min-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+form {
+    background-color: #2a0d45;
+    color: #fefefe;
+    padding: 10px;
+    border-radius: 15px;   
+}
+form fieldset {
+    margin: 10px 0px;
+}
+form legend {
+    font-size: 24px;
+}
+.question {
+    font-size: 18px;
+}
+form label {
+    font-size: 18px;
+    margin: 5px;
+}
+form input, select, textarea {
+    margin: 5px;
+}
+
+input[type="submit"] {
+    border-color: #0f52ba;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #0f52ba;
+}
+h1, p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-style: solid;
+    color: #1c1c1c;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #fff;
+    opacity: 0.8;
+    font-weight: bold;
+}
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 0px;
+    border-width: 0px 0px 10px 0px;
+    border-color: #9b111e;
+}
+p.feedback, p#question {
+    font-size: 18px;
+    border-color: #2a0d45;
+    background-color: #2a0d45;
+    color: #fefefe;
+    opacity: 1.0;
+}
+p#form_note {
+    border-color: #9b111e;
+}
+
+

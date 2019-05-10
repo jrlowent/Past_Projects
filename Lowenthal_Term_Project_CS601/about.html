@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About Me</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>About Me</h1>
+            <nav><!--Site navigation within header so users can locate pages faster-->
+                <ul>
+                    <li class="nav_list"><a href="index.html">Home</a></li>
+                    <li class="nav_list"><a href="work_samples.html">Work Samples</a></li>
+                    <li class="nav_list"><a href="professional.html">Professional</a></li>
+                    <li class="nav_list"><a href="education.html">Education</a></li>
+                    <li class="nav_list"><a href="about.html">About Me</a></li>
+                    <li class="nav_list"><a href="contact.html">Contact</a></li>
+                </ul> 
+            </nav>
+        </header>
+        <main>
+            <section class="large_content_container" id="biography_container"><!--Separates Biography from Interests, for layout-->
+                <h2>Biography</h2>
+                <p class="biography" id="intro_description"><!--Class to show that paragraphs are part of biography; for later CSS-->
+                    I was born in Southern Maryland, and have lived here most of my life.  
+                    I currently live about 45 minutes Southeast of Washington, D.C. My father is from 
+                    outside of Baltimore City, and my mother is from New England. Before I was born, 
+                    my parents moved down to Southern Maryland due to my father's work.  
+                    My mom used to be a nurse, but stopped to raise my brother and I.  I have 
+                    one older brother who is also a graduate student in a combined M.D./Ph.D. 
+                    program, and a family dog named Melody.  There is a picture of my dog on my home page.
+                </p>
+                <p class="biography"><!--new pgh-->
+                    While growing up, I cycled through many different career aspirations, some of 
+                    them more realistic than others.  For a long time, I wanted to become a professional 
+                    musician and go to school for music.  However, I realized that I would likely need to tour, 
+                    and the lifestyle of being a touring musician is not for me.  I studied psychology 
+                    during my undergraduate education with the intention of studying cognitive neuroscience 
+                    later.  My career ideas shifted a bit, but still fell within that realm.  After graduating, I 
+                    worked in clinical research for a period of time.  However, I realized that that career
+                    path was not for me.  I took a step back and started to explore programming.  Eventually,
+                    I fell on web development, and now I am studying exactly that at Boston University.
+                </p>
+                <p class="biography"><!--new pgh-->
+                    In my free time, I like to keep music in my life and to stay active.  I have been 
+                    playing drums for almost 16 years, and guitar for almost 13.  I also like to lift weights
+                    and do cardiovascular exercise. These activities have truly had a positive impact on my life,
+                    so I do not plan on giving them up anytime soon.  I like to explore new places, go to 
+                    concerts, do outdoor activities, spend time with friends and family, and watch movies.  I 
+                    also like to spend time learning more programming-related things.
+                </p>
+            </section>
+            <section class="small_content_container"><!--for layout-->
+                <section id="list_container"><!--Separates interests from biography-->
+                    <h2>Interests</h2>
+                        <ul id="outer_list">
+                            <li>Listening to music, playing drums and guitar, going to concerts</li>
+                            <li>Lifting weights and cardiovascular exercise</li>
+                            <li>Outdoor activities when I get the chance, including:
+                                <ul id="inner_list">
+                                    <li>Hiking</li>
+                                    <li>Swimming</li>
+                                    <li>Sailing</li>
+                                    <li>Windsurfing</li>
+                                    <li>Football (two-hand-touch)</li>
+                                    <li>Skiing</li>
+                                </ul>
+                            </li>
+                            <li>Going out with friends</li>
+                            <li>Watching movies</li>
+                            <li>Programming</li>
+                            <li>Trying new things</li>                   
+                        </ul>
+                </section>
+            </section>     
+            <section class="media_container">
+                <p>The video below is me playing a drum cover of "The Woven Web" by Animals as Leaders.</p>
+                <video poster="images/drum_cover_mp4_moment.jpg" width="692" height="388" controls><!--Image from video shown on page load-->
+                    <source src="videos/animals_as_leaders__the_woven_web_drum_cover.mp4" type="video/mp4"><!--displayed first for knowwn iPad bug-->
+                    <source src="videos/animals_as_leaders__the_woven_web_drum_cover.webm" type="video/webm"><!--For when browser does not play .mp4-->
+                    <P>Your browser does not support the HTML5 player, or webm and mp4 formats.</P><!--If the video fails to show-->   
+                </video>
+            </section>
+        </main>
+    </body>
+</html>
