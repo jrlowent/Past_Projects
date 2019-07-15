@@ -22,12 +22,10 @@ they are not already installed, then use this command:
 
 npm install --save (libraryName)
 
-The credentials for the database name, username, password, host, and 
-port are located in the credentials.js file.  If you wish to connect 
-to your existing database, update these credentials with your own.  
-If you wish to create a database with credentials listed in that file,
-then credentials.js does not need to be updated.  The collections in 
-MongoDB will show appear under the following titles:
+The credentials for your database name, username, password, host, and 
+port would be located in the credentials.js file.  Update these credentials
+with your own.  The collections in MongoDB will show appear under the 
+following titles:
 
 "productModelJL"
 "customerOrderModelJL"
