@@ -29,7 +29,7 @@ If you wish to create a database with credentials listed in that file,
 then credentials.js does not need to be updated.  The collections in 
 MongoDB will show appear under the following titles:
 
-"productModeljl"
+"productModelJL"
 "customerOrderModelJL"
 
 If you use a MongoDB font-end application like "Robo-3T", then the 
